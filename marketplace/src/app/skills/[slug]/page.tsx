@@ -10,7 +10,7 @@ import Navbar from "@/components/Navbar";
 // We need a small client component to handle the copy button state
 import CopyButton from './CopyButton';
 
-export default async function SkillPage({ params }: { params: { slug: string } }) {
+export default async function SkillPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   
   // Find the skill directory
