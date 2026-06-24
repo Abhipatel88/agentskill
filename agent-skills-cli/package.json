@@ -1,0 +1,24 @@
+{
+  "name": "my-agent-skills-cli",
+  "version": "1.0.1",
+  "description": "Custom CLI for downloading agent skills",
+  "main": "index.js",
+  "bin": {
+    "my-agent-skills": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "agent",
+    "skills",
+    "cli"
+  ],
+  "author": "Antigravity User",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "commander": "^11.0.0",
+    "my-agent-skills-cli": "^1.0.0"
+  }
+}
