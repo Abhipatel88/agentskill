@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { Roboto } from "next/font/google";
 import "./globals.css";
 
-const galgo = localFont({
-  src: "../fonts/Galgo.woff",
-  variable: "--font-galgo",
-  weight: "100 900",
+const roboto = Roboto({
+  subsets: ["latin"],
+  weight: ["100", "300", "400", "500", "700", "900"],
+  variable: "--font-roboto",
 });
 
 export const metadata: Metadata = {
@@ -22,7 +22,7 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${galgo.variable} h-full antialiased`}
+      className={`${roboto.variable} h-full antialiased`}
     >
       <body suppressHydrationWarning className="font-sans min-h-full flex flex-col">{children}</body>
     </html>
